@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>design &#8211; Neil Solomon</title>
+	<atom:link href="index.htmltag/design/feed/" rel="self" type="application/rss+xml" />
+	<link>https://OFFLINEZIP.wpsho</link>
+	<description>Resume Of Neil Solomon</description>
+	<lastBuildDate>Sun, 07 Jul 2019 05:04:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Things we have learned in software development</title>
+		<link>index.html2018/04/16/things-we-have-learned-in-software-development/</link>
+				<pubDate>Mon, 16 Apr 2018 20:34:17 +0000</pubDate>
+		<dc:creator><![CDATA[DRSolomon]]></dc:creator>
+				<category><![CDATA[Thoughts]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[document]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[plugin]]></category>
+		<category><![CDATA[web]]></category>
+
+		<guid isPermaLink="false">https://ryan-demo.beshley.com/?p=115</guid>
+				<description><![CDATA[Random thoughts on coding and development.]]></description>
+								<content:encoded><![CDATA[<p>&#8220;Without requirements or design, programming is the art of adding bugs to an empty text file.&#8221; &#8212; Louis Srygley</p>
+<p>&#8220;A language that doesn&#8217;t affect the way you think about programming, is not worth knowing.&#8221; &#8212; Alan Perlis</p>
+<h3 id="write-steps-as-comments">Write steps as comments</h3>
+<p>If you have no idea how to start, describe the intended flow of the application in high level, pure English first. Then fill the spaces between comments with the code.</p>
+<p>Better yet: think of every comment as a function, then write the function that does exactly what you wrote.</p>
+<h3 id="documentation-is-a-love-letter-to-your-future-self">Documentation is a love letter to your future self</h3>
+<p>We all know writing those `<em>bladdy damn docs</em>` for functions, classes and modules are a pain in the backside. But realizing what you were thinking when you wrote the function will save you much time in the future.</p>
+<h3 id="be-ready-to-throw-your-code-away">Be ready to throw your code away</h3>
+<p>You shouldn&#8217;t worry about doing this.</p>
+<p>Your code is not a brick wall: if you have to throw it always, it is not wasted code. It only means your time writing code was lost, but you got have a better understanding of the problem now!</p>
+<h3 id="right-tool-for-the-job-is-just-to-push-an-agenda">&#8220;The right tool for the job&#8221; is just used to push an agenda</h3>
+<p>&#8220;The right tool for the job&#8221; should be an expression that meant that there is a right and a wrong tool to do something &#8212; e.g., using a certain language or framework instead of the current language or framework.</p>
+<p>Every time I heard someone mention it, they were trying to push their personal favorite language or framework instead of, lets say, the right language or framework.</p>
+<h3 id="data-flows-beat-patterns">Flows beat patterns</h3>
+<p>When you understand how the data must flow in your code, you&#8217;ll end up with better code than if you applied a bunch of design patterns&#8230; Personal opinion!</p>
+<h3 id="the-magical-number-seven-plus-or-minus-two">The Magical Number Seven, Plus or Minus Two</h3>
+<p>&#8220;<a href="https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two">The magical number</a>&#8221; is a psychology article about the number of things one can keep in their mind at the same time.</p>
+<p>If you have a function, that calls a function, that calls a function, that calls a function, that calls a function, that calls function, you may be sure it will be a hell to read later.</p>
+<p>Think more about: I&#8217;ll get the result of this function, then pass it to the second function, get its result, pass to the third and so on.</p>
+<p>But:</p>
+<ol>
+<li>Today, psychologists talk more about the magical number FOUR, not seven.</li>
+<li>Think function composition (as in &#8220;I&#8217;ll call that function, then that function, then that function&#8230;&#8221;), not function calling (as in &#8220;That function will call that function, that will call that function&#8230;&#8221;).</li>
+</ol>
+<h3 id="code-reviews-are-not-for-style">Code reviews are not for style</h3>
+<p>Take your time on code or peer reviews to point architectural or design problems, not the code style problems.</p>
+<p>Nobody really likes the person whose code or peer reviews are only <em>&#8220;you left blanks in this line&#8221;</em> or &#8220;missing space before parenthesis&#8221; and such.</p>
+<p>Now, if you <strong><em>do</em></strong> find architectural or design problems, <strong><em>then</em></strong> you can add your code style problems.</p>
+<h3 id="companies-look-for-specialists-but-keep-generalists-longer">Companies look for specialists but keep generalists longer</h3>
+<p>If you know a lot about one single language, it may make it easier to get a job, but in the long run, language usage dies and you&#8217;ll need to find something else. Knowing a bit about a many other languages helps in the long run, not to mention that it may help you think of better solutions.</p>
+<h3 id="when-it-s-time-to-stop-it-s-time-to-stop">When it&#8217;s time to stop, it&#8217;s time to stop</h3>
+<p>Learn when you can&#8217;t code anymore.</p>
+<p>Learn when you can&#8217;t process things anymore. Don&#8217;t push beyond that, it will just make things worse in the future.</p>
+<p>If you don&#8217;t stop when you can&#8217;t carry on comfortably you will write junk, and likely have to re-do it tomorrow!</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>
